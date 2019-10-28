@@ -1,2 +1,0 @@
-# COMP426-PROJECT
-COMP426 Repo for team //TODO

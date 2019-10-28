@@ -1,14 +1,11 @@
 {
-  "name": "client",
+  "name": "server",
   "version": "1.0.0",
-  "description": "COMP426 Repo for team //TODO",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "MIT",
-  "dependencies": {
-    "jquery": "^3.4.1"
-  }
+  "license": "MIT"
 }
