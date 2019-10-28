@@ -1,0 +1,22 @@
+{
+  "name": "comp426-project",
+  "version": "1.0.0",
+  "description": "COMP426 Repo for team //TODO",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zolvera1/COMP426-PROJECT.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zolvera1/COMP426-PROJECT/issues"
+  },
+  "homepage": "https://github.com/zolvera1/COMP426-PROJECT#readme",
+  "dependencies": {
+    "jquery": "^3.4.1"
+  }
+}
