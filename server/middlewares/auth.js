@@ -8,7 +8,7 @@ export async function authenticateUser(req, res, next) {
             example: 'inside authorization header: Bearer jws.token.here'
         })
     }
-
+    const TOKEN = req.headers.authorization.replace('Bearer ', '');
     try {
         req.user = jwt.verify(req.token, process.env.SECRET_KEY);
         next();
