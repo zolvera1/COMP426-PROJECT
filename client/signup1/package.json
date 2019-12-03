@@ -1,15 +1,14 @@
 {
-  "name": "sign-up",
+  "name": "signup1",
   "version": "1.0.0",
-  "description": "",
-  "main": "signup.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
+  "description": "",
   "dependencies": {
-    "bulma": "^0.8.0",
     "jquery": "^3.4.1"
   }
 }

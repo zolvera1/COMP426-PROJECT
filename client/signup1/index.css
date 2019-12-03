@@ -1,0 +1,45 @@
+body{
+    background-color: rgb(248, 245, 240);
+}  
+
+#title{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25pt;
+    color: grey;
+    font-weight: bold;
+    text-align: center;  
+}
+hr{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    border-width: 2px;
+    opacity: 0.5;
+}
+
+p{
+    font-weight: normal;
+    font-size: 15pt;
+}
+
+#signUpForm{
+    border-style: solid;
+    border-width: 1.5pt;
+    border-color: rgb(207, 206, 206);
+    background-color: white;
+    font-weight: normal;
+    font-size: 15pt;
+    margin-left: 40pt;
+    margin-right: 40pt;
+}
+
+form{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    font-size: 15pt;
+    text-align: center;
+    padding: 10pt
+}
+input{
+    padding: 7px;
+}
