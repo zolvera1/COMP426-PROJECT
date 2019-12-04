@@ -1,2 +1,96 @@
 {
+  "users": {
+    "test": {
+      "passwordHash": "$2a$10$H6oAt4tYoY19fynb1nwhWe0WFkhWOKOWS/30dtXwhdj2Ihk6mQG.2"
+    },
+    "carla": {
+      "passwordHash": "$2a$10$/QvdpZBTB169zxH423ifQOYs4NuxtvlMNFyP4quDf6pa3wcVlY.j."
+    },
+    "ramses": {
+      "passwordHash": "$2a$10$8OTtU/7qNXrmrKEMQ5j57.GuUCKT0hMDCu/9GZmymPmkfgTjX3ZYi"
+    },
+    "unc": {
+      "passwordHash": "$2a$10$UW6vOqBW0N7BvKmWS4IJGOV4tFifIWI.7zKkWFDRc.tZseI1TUaVS"
+    },
+    "hey": {
+      "passwordHash": "$2a$10$TXshmBmxDz5/sXsJComy0uumpYC5zRbfZxiwQDk1dwizvyM2tuls6"
+    },
+    "red": {
+      "passwordHash": "$2a$10$4bHs1IS92EaiOOKWDKHdh.ntaQ9srcKnDmpNHc6hzsnJOrujnUSRW"
+    },
+    "asdfjkl": {
+      "passwordHash": "$2a$10$0lgZ0T2vMcAHrffbBonvie1tmiaHlRJkjFY/Ggxnacr.65eliEoHa",
+      "data": {
+        "other": "data"
+      }
+    },
+    "hello": {
+      "passwordHash": "$2a$10$BO5Fn2byZw8rK80SCgvZCekvLNotfV8StNTWfkUocjpAIq5XRrtTa",
+      "data": {
+        "other": "data"
+      }
+    },
+    "carolina": {
+      "passwordHash": "$2a$10$lr690WWFs1Z6q6T6U8ItVeMcLZqTET.GvhCpJYrpckPuHDJM1U1qG",
+      "data": {
+        "other": "data"
+      }
+    },
+    "world": {
+      "passwordHash": "$2a$10$2yre.6BMBSX/lHS89pS4JuXsLlCLYm5EvtZe2Qioxtm8yandqdUpe",
+      "data": {
+        "other": "data"
+      }
+    },
+    "sky": {
+      "passwordHash": "$2a$10$tNVoAYt4vT5kE6HYLsQUfuGCSMQGUUeXIS7v.IGnAmBbe/jtAcpCW",
+      "data": {
+        "other": "data"
+      }
+    },
+    "yellow": {
+      "passwordHash": "$2a$10$Uxn5RibCiIgEpdUpPbYvNO.Yl0cIsS1puEBzAtYcTElMxiY47b2Re",
+      "data": {
+        "other": "data"
+      }
+    },
+    "yasminn@live": {
+      "unc": {
+        "edu": {
+          "passwordHash": "$2a$10$euschfFXUKtYUTe1O/RMy./mWezUIamXjcVpC6Nm9qkiHaeE5Coze",
+          "data": {
+            "name": "Yasmin",
+            "lname": "Aguilar"
+          }
+        }
+      }
+    },
+    "yasmin": {
+      "aguilar18@hotmail": {
+        "com": {
+          "passwordHash": "$2a$10$N69oCLtlLEnPac8NQdFLneQ0WLafoxg4Jw3Br49c9Sd5KU64ejcx2",
+          "data": {
+            "name": "hey",
+            "lname": "ha"
+          }
+        }
+      }
+    },
+    "yasdfs": {
+      "passwordHash": "$2a$10$J7WzKzYTFRkpV6bgWi7ZAuG9SYIIlb1u78IMSMLLkspilcijOcTvi",
+      "data": {
+        "name": "asdf",
+        "lname": "sdfgfd"
+      }
+    },
+    "yasminaguilar@gmail": {
+      "com": {
+        "passwordHash": "$2a$10$x4Isn.nC3aeweCqIQxV/9uDWN5CSdmjUDxUuO3Ag4jIJzsPUDx4t.",
+        "data": {
+          "name": "Yasmin",
+          "lname": "Aguilar-Diaz"
+        }
+      }
+    }
+  }
 }
