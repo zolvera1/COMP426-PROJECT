@@ -28,6 +28,7 @@ export const renderLogInForm = function(){
 
 export async function handleLIPress(event){
     // Saves name & password inputs
+    event.preventDefault();
     var inputName = document.getElementById('name').value;
     var inputPass = document.getElementById('pass').value;
     
