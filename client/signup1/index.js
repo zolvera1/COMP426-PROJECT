@@ -2,28 +2,30 @@ const $root = $(`#root`);
 
 export const renderSignUpForm = function(){
     return ` <div id="signUpForm">
-        <form action=" "; id=form; style="background-color:white";>
-            <label for="fName";>First Name</label>
+        <form action=" "; id="form"; style="background-color:white";>
+            <label for="fName" class="label";>First Name</label>
             <br>
-            <input type="text"; id="name"; name="name"; value="";>
-            <br>
-            <br>
-            <label for="lName";>Last Name</label>
-            <br>
-            <input type="text"; id="lname"; name="lname"; value="";>
+            <input type="text"; id="name"; class="inputL"; name="name"; value="";>
             <br>
             <br>
-            <label for="email";>Email</label>
+            <label for="lName" class="label";>Last Name</label>
             <br>
-            <input type="text"; id="email"; name="email"; value="";>
+            <input type="text"; id="lname"; class="inputL" name="lname"; value="";>
             <br>
             <br>
-            <label for="hfirst";>Password</label>
+            <label for="email" class="label";>Email</label>
             <br>
-            <input type="text"; id="pass"; name="pass"; value="";>
+            <input type="text"; class="inputL"; id="email"; name="email"; value="";>
             <br>
-            <br> 
-            <button class="signUp">Sign Up </button>
+            <br>
+            <label for="hfirst" class="label";>Password</label>
+            <br>
+            <input type="text"; class="inputL"; id="pass"; name="pass"; value="";>
+            <br>
+            <br>
+            <div id="boton"> 
+                <button class="signUp">Sign Up </button>
+            </div>
             </form>
         </div>`
 }
@@ -35,7 +37,40 @@ export async function handleSUPress(event){
     var inputName = document.getElementById('name').value;
     var inputLast = document.getElementById('lname').value;
 
-   
+    // Check is one of the fields was left empty
+    if (inputName == "" || inputLast == "" || inputEmail == "" || inputPass =="") {
+        $(`#form`).replaceWith(`
+            <form action=" "; id="form"; style="background-color:white";>
+            <p>Please make sure to fill out all fields</p>
+            <label for="fName" class="label";>First Name</label>
+            <br>
+            <input type="text"; id="name"; class="inputL"; name="name"; value=${inputName}>
+            <br>
+            <br>
+            <label for="lName" class="label";>Last Name</label>
+            <br>
+            <input type="text"; id="lname"; class="inputL" name="lname"; value=${inputLast}>
+            <br>
+            <br>
+            <label for="email" class="label";>Email</label>
+            <br>
+            <input type="text"; class="inputL"; id="email"; name="email"; value=${inputEmail}>
+            <br>
+            <br>
+            <label for="hfirst" class="label";>Password</label>
+            <br>
+            <input type="text"; class="inputL"; id="pass"; name="pass"; value=${inputPass}>
+            <br>
+            <br>
+            <div id="boton"> 
+                <button class="signUp">Sign Up </button>
+            </div>
+            </form>
+        </div>`
+        );  
+    }
+    
+    else {
     let r = axios.post('http://localhost:3000/account/create',
         {
             "name": inputEmail,
@@ -47,19 +82,41 @@ export async function handleSUPress(event){
         });
         r.then(response => {
             console.log(response.data);
-        }).catch(error => {
+            console.log("in here");
+        }).catch(error => { 
             console.log(error);
+            $root.html(`<div id="signUpForm">
+                <form action=" "; id="form"; style="background-color:white";>
+                    <p> This email is already in use</p>
+                    <label for="fName" class="label";>First Name</label>
+                    <br>
+                    <input type="text"; id="name"; class="inputL"; name="name"; value="";>
+                    <br>
+                    <br>
+                    <label for="lName" class="label";>Last Name</label>
+                    <br>
+                    <input type="text"; id="lname"; class="inputL" name="lname"; value="";>
+                    <br>
+                    <br>
+                    <label for="email" class="label";>Email</label>
+                    <br>
+                    <input type="text"; class="inputL"; id="email"; name="email"; value="";>
+                    <br>
+                    <br>
+                    <label for="hfirst" class="label";>Password</label>
+                    <br>
+                    <input type="text"; class="inputL"; id="pass"; name="pass"; value="";>
+                    <br>
+                    <br>
+                    <div id="boton"> 
+                        <button class="signUp">Sign Up </button>
+                    </div>
+                </form>
+            </div>`
+            )
         });
-    
-    // const result = await axios({
-    //     method: 'post',
-    //     url: 'http://localhost:3000/account/create',
-    //     data: {
-    //         "name": inputName,
-    //         "pass": inputPass,
-    //     }
-    // })
-    $root.html("hi");
+    }
+    $root.html("blah"); 
 }
 
 $(document).ready(function(){

@@ -6,7 +6,7 @@ body {
 
 .header {
     padding-top: 5pt;
-    padding-left: 90pt;
+    padding-left: 70pt;
     font-size: 18pt;
     display: inline-block;
     padding-bottom: 10pt;
@@ -65,4 +65,10 @@ body {
     color: white;
     font-size:13pt;
     text-decoration:none;
+}
+
+a{
+    color: rgb(77, 77, 74);
+    text-decoration: none;
+
 }

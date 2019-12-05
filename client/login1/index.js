@@ -8,12 +8,14 @@ export const renderLogInForm = function(){
             <input type="text"; id="name"; name="name"; value="";>
             <br>
             <br>
-            <label for="hfirst" class="label";>Password</label>
+            <label for="hfirst" class="label1";>Password</label>
             <br>
             <input type="text"; id="pass"; name="pass"; value="";>
             <br>
             <br> 
+            <div id="boton">
             <button class="logIn">Log In </button>
+            </div>
             <br>
             <br>
             <div id="signUpLink">

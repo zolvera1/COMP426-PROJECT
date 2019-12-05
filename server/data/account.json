@@ -91,6 +91,46 @@
           "lname": "Aguilar-Diaz"
         }
       }
+    },
+    "torresa@live": {
+      "unc": {
+        "edu": {
+          "passwordHash": "$2a$10$8pPwN5VzDdVIKIKA8J.mA.4woMx.Ck/BFdd9Zw/.3wCmGc5qguHWO",
+          "data": {
+            "name": "April",
+            "lname": "Torres"
+          }
+        }
+      }
+    },
+    "nathali_12@yahoo": {
+      "com": {
+        "passwordHash": "$2a$10$95GhAggAs3m0p1RvXOx44uaUO5sxmATDyiR6Ma9fScia619DubcRW",
+        "data": {
+          "name": "Nathali",
+          "lname": "Aguilar"
+        }
+      }
+    },
+    "sergio": {
+      "serasosa8@gmail": {
+        "com": {
+          "passwordHash": "$2a$10$pyydzlsxP2WnvAwtMTUXn.tUDZSAZ09OkFLoiEKAPXKvRdryjd23W",
+          "data": {
+            "name": "sergio",
+            "lname": "aguilar"
+          }
+        }
+      }
+    },
+    "samyolvera1@gmail": {
+      "com": {
+        "passwordHash": "$2a$10$bTtYWfJrZwlWvTSOaPRQeOEccVzMSHggZWwEa75z0TxmPA1VTNlM2",
+        "data": {
+          "name": "Sam",
+          "lname": "Olvera"
+        }
+      }
     }
   }
 }
