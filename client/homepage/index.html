@@ -1,27 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Homepage</title>
 
-        <!-- Include links to CSS stylesheets below -->
-        <link rel="stylesheet" href = "../css/cards.css">
-             
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <title>Picturesque</title>
+    <link rel="shortcut icon" href="../images/fav_icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="homepage.css">
 
-    <body>
-        <div id="container">
-            <div id="title">
-                    Picturesque
+</head>
+
+<body style="background-color: rgb(248, 245, 218)">
+    <!-- START NAV -->
+    <nav class="navbar" style="background-color: rgb(248, 245, 218)">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="../">
+                    <h>Picturesque</h> 
+                </a>
+                <span class="navbar-burger burger" data-target="navbarMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    </span>
             </div>
-            <div id="root">
+            <div id="navbarMenu" class="navbar-menu">
+                <div class="navbar-end">
+                    <a class="navbar-item is-active">
+                        Explore
+                    </a>
+                    <a class="navbar-item">
+                        People
+                    </a>
+                    <a class="navbar-item">
+                        Favorites
+                    </a>
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">
+                            My account
+                        </a>
+                        <div class="navbar-dropdown">
+                            <a class="navbar-item">
+                                Profile
+                            </a>
+                            <a class="navbar-item">
+                                Preferences
+                            </a>
+                            <hr class="navbar-divider">
+                            <div class="navbar-item">
+                                 Logout
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+    </nav>
+    <!-- END NAV -->
 
-        <!-- Include links to JavaScript files below -->
-        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-        <script src="../node_modules/jquery/dist/jquery.js"></script>
-        <script src="homepage.js" type="module"></script>
-    </body>
+    <!--SEARCH BAR-->
+    <div class="container">
+        <div id="flow">
+            <span class="flow-1"></span>
+            <span class="flow-2"></span>
+            <span class="flow-3"></span>
+        </div>
+        <div class="section">
+            <div class="box">
+                <div class="field has-addons">
+                    <div class="control is-expanded">
+                        <input class="input has-text-centered" type="search" placeholder="Begin your search here: Enter city name">
+                    </div>
+                    <div class="control">
+                        <a class="button is-info" style="background-color:rgb(9, 49, 94); width:180pt">Search</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row columns">
+                <!-- CHAPEL HILL CARD -->
+                <div class="column is-one-third">
+                    <div class="card large">
+                        <div class="card-image">
+                            <figure class="image">
+                                <img class="images" src="oldwell.jpg">
+                            </figure>   
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content">
+                                    <p class="title is-4 no-padding">Chapel Hill, NC</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--LOS ANGELES CARD-->
+                <div class="column is-one-third">
+                    <div class="card large">
+                        <div class="card-image">
+                            <figure class="image">
+                                <img class="images"src="la.jpg">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">   
+                                <p class="title is-4 no-padding" style="text-align:center">Los Angeles, CA</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--NEW YORK CARD-->
+                <div class="column is-one-third">
+                    <div class="card large">
+                        <div class="card-image">
+                            <figure class="image">
+                                <img class="images"src="ny.jpg">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <p class="title is-4 no-padding"style="text-align:center">New York, NY</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END CARDS -->
+    <footer class="hpfooter">
+    </footer>
+    <script src="../js/bulma.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src=../node_modules/jquery/dist/jquery.js></script>
+    <script src="login.js" type="module"></script>
+</body>
+
 </html>
