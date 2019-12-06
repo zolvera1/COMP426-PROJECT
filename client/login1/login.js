@@ -1,4 +1,4 @@
-import axios from 'axios';
+
 const $root = $(`#root`);
 
 export const renderLogInForm = function(){
