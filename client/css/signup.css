@@ -92,8 +92,7 @@ a{
 #image{
     display: inline-block;
     text-align: left;
-    opacity: 0.5;
-    float:left;   
+    opacity: 0.5; 
 }
 
 img{
@@ -112,6 +111,5 @@ img{
 p{
    color: rgb(201, 144, 23);
    padding-right:80pt;
-   
-   
+   text-align:center; 
 }

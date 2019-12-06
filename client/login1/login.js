@@ -3,15 +3,15 @@ const $root = $(`#root`);
 
 export const renderLogInForm = function(){
     return ` <div id="logInForm">
-        <form action=" "; id=form; style="background-color:white";>
-            <label for="fName" class="label";>Email</label>
+        <form action=" "; id="form"; style="background-color:white";>
+            <label for="fName"; id="email"; class="label";>Email</label>
             <br>
             <input type="text"; id="name"; name="name"; value="";>
             <br>
             <br>
             <label for="hfirst" class="label1";>Password</label>
             <br>
-            <input type="text"; id="pass"; name="pass"; value="";>
+            <input type="password"; id="pass"; name="pass"; value="";>
             <br>
             <br> 
             <div id="boton">
@@ -30,34 +30,23 @@ export const renderLogInForm = function(){
 export async function handleLIPress(event){
     // Saves name & password inputs
     event.preventDefault();
-    var inputName = document.getElementById('name').value;
+    var inputEmail = document.getElementById('name').value;
     var inputPass = document.getElementById('pass').value;
-    
-    // const result = await axios({
-    //     method: 'post',
-    //     url: 'http://localhost:3000/account/login',
-    //     data: {
-    //         "name": inputName,
-    //         "pass": inputPass,
-    //     }
-    // }).then(console.log(result.data));
-    let success = false;
+   
     let r = axios.post('http://localhost:3000/account/login',
         {
-            "name": inputName,
+            "name": inputEmail,
             "pass": inputPass,
         });
         r.then(response => {
-            success=true;
-            //console.log(success);
+            window.location.replace('../homepage/index.html');
             console.log(response.data);
         }).catch(error => {
-            success=false;
             console.log(error);
         });
-        console.log(success);
-
-    $root.html("it works");
+    $(`p`).remove();
+    $(`#title`).append(`<p>Invalid email or password</p>`)
+    
 }
 
 $(document).ready(function(){

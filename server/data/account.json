@@ -131,6 +131,40 @@
           "lname": "Olvera"
         }
       }
+    },
+    "yasmin@gmail": {
+      "com": {
+        "passwordHash": "$2a$10$Xh9Fhb.Re6dWRkTe3vlXNeljly4VSYknd9h8vaCogLTRaBPUea.l6",
+        "data": {
+          "name": "Yasmin",
+          "lname": "Aguilar"
+        }
+      }
+    },
+    "test@gmail": {
+      "com": {
+        "passwordHash": "$2a$10$K9BxltqpoMu.TF32hNR8/.T4dcqAokHLqYHTnGf6kVIrxvX6NXQLu",
+        "data": {
+          "name": "yasmin",
+          "lname": "aguilar"
+        }
+      }
+    },
+    "asdf": {
+      "passwordHash": "$2a$10$5Pze3awpA9XxAn1A0ucZWuqPd3b91w1qOE.G8oVa18SjWfStZBgjS",
+      "data": {
+        "name": "yasmin",
+        "lname": "diaz"
+      }
+    },
+    "yas@gmail": {
+      "com": {
+        "passwordHash": "$2a$10$ildIW2TO65doKUwgsQ2B.OiaHAL5QBXf/UcsPmq.DbrtfbwrJyvcW",
+        "data": {
+          "name": "yasmin",
+          "lname": "aguilar"
+        }
+      }
     }
   }
 }

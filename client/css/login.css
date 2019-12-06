@@ -92,7 +92,6 @@ a{
     display: inline-block;
     text-align: right;
     opacity: 0.5;
-    float:right;
     padding-left: 28.5%;  
 }
 
@@ -109,3 +108,13 @@ img{
     padding-right: 0%;
     padding-left: 80pt;
 }
+
+p{
+    color: rgb(201, 144, 23);
+    font-size: 10pt;
+    position: relative;
+    font-weight: none;
+    text-emphasis: none;
+    text-align: center;
+    
+ }
