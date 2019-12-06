@@ -1,3 +1,4 @@
+import axios from 'axios';
 const $root = $(`#root`);
 
 export const renderSignUpForm = function(){
@@ -32,6 +33,7 @@ export const renderSignUpForm = function(){
 
 export async function handleSUPress(event){
     // Saves name & password inputs
+    event.preventDefault();
     var inputEmail = document.getElementById('email').value;
     var inputPass = document.getElementById('pass').value;
     var inputName = document.getElementById('name').value;
@@ -116,10 +118,10 @@ export async function handleSUPress(event){
             )
         });
     }
-    $root.html("blah"); 
+    
 }
 
 $(document).ready(function(){
-    $root.append(renderSignUpForm());
+    $root.append(renderSignUpForm);
     $root.on("click",".signUp",handleSUPress);
 });
