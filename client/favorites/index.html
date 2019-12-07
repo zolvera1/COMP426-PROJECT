@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Favorites | Picturesque</title>
+        <link rel="shortcut icon" href="../images/fav_icon.png" type="image/x-icon">
+        <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css" />
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" href = "fav.css">        
+    </head>
+
+    <body>
+            <nav class="navbar" style="background-color: rgb(248, 222, 226)">
+                    <div class="container">
+                        <div class="navbar-brand">
+                            <a class="navbar-item" href="../homepage/index.html">
+                                <h>Picturesque</h> 
+                            </a>
+                            <span class="navbar-burger burger" data-target="navbarMenu">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                </span>
+                        </div>
+                        <div id="navbarMenu" class="navbar-menu">
+                            <div class="navbar-end">
+                                <a class="navbar-item is-active" href="../homepage/index.html">
+                                    Explore
+                                </a>
+                                <a class="navbar-item" href="../people/index.html">
+                                    People
+                                </a>
+                                <a class="navbar-item" href="../favorites/index.html">
+                                    Favorites
+                                </a>
+                                <div class="navbar-item has-dropdown is-hoverable">
+                                    <a class="navbar-link">
+                                        My account
+                                    </a>
+                                    <div class="navbar-dropdown">
+                                        <a class="navbar-item">
+                                            Profile
+                                        </a>
+                                        <a class="navbar-item">
+                                            Preferences
+                                        </a>
+                                        <hr class="navbar-divider">
+                                        <div class="navbar-item">
+                                             Logout
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+        <div id="container">
+            <div id="text">   
+                <div id="title">
+                    My Favorites
+                </div>
+                <div id="subtitle">
+                    My bucket list items
+                </div>
+                <div id="root">
+                </div>
+            </div>
+        </div>
+
+        <!-- Include links to JavaScript files below -->
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src=../node_modules/jquery/dist/jquery.js></script>
+        <script src="fav.js" type="module"></script>
+        <script src="../node_modules/bulma/bulma/css/bulma.css"></script>
+    </body>
+</html>

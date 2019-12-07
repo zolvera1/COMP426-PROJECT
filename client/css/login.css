@@ -14,6 +14,8 @@ body {
     margin-bottom: 80pt; 
 }
 
+
+
 #title{
     font-size: 20pt;
     color: rgb(77, 77, 74);
@@ -75,17 +77,18 @@ input{
 
 a{
     color: rgb(201, 144, 23);
-    font-size: 8pt;
+    font-size: 10pt;
     text-decoration: none;
     position: relative;
-    padding-left: 20pt;
+    padding-left: 15pt;
 }
 
 #signUpLink{
     color: rgb(201, 144, 23);
-    font-size: 8pt;
+    font-size: 12pt;
     text-decoration: none;
-    padding-left: 20pt; 
+    margin-left:20pt;
+ 
 }
 
 #image{

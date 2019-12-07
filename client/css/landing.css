@@ -4,16 +4,25 @@ body {
     color: white;
 }
 
+h{
+    color: white;
+    font-size: 20pt;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+
 .header {
-    padding-top: 5pt;
-    padding-left: 70pt;
-    font-size: 18pt;
+    padding-left: 40pt;
+    font-size: 20pt;
     display: inline-block;
     padding-bottom: 10pt;
+    font-weight:bold;
+   
 }
 .header-flex {
     padding-top: 7pt;
-    padding-right: 15pt;
+    padding-right: 30pt;
     float: right;
     display: inline-block;
     font-size: 12pt;
@@ -21,14 +30,19 @@ body {
 
 #picture{
     background-color: rgb(248, 222, 226);
+    display: block;
+    position: relative;
+    opacity:0.9;
 }
 
 #picture div {
     position: absolute;
-    top: 300px;
+    top: 230px;
     left: 100px;
     font-size: 40pt;
     font-weight: bold;
+    
+
 }
 
 #footerContainer {
@@ -38,7 +52,7 @@ body {
     font-family: Arial, sans-serif;
     color: rgb(77, 77, 74);
     font-weight: bold;
-    font-size: 20pt;
+    font-size: 15pt;
     width: 1300;
 }
 #travel {
@@ -50,7 +64,7 @@ body {
     padding-left: 18%;
 }
 #cam{
-    padding-left:18%;
+    padding-left:13%;
 }
 #bottom {
     background-color: white;

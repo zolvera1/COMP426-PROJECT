@@ -4,21 +4,41 @@
   <head>
     <meta charset="utf-8">
     <title>Welcome to Picturesque</title>
-    <link rel="stylesheet" href="./css/landing.css">
     <script src="https://kit.fontawesome.com/487c9b95df.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="../images/fav_icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/landing.css">
+ 
+
 </head>
 <body>
-    <div id=headerContainer> 
-        <div class=header>Picturesque</div>
-        <div class=header-flex>
-            <a href="../signup1/index.html"class=link>Sign Up</a>
-        </div>
-        <div class=header-flex>
-            <a href="../login1/index.html" class=link>Login</a>
-        </div>
-    </div>
+    <nav class="navbar" style="background-color:rgb(9, 49, 94);">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="">
+                    <h>Picturesque</h> 
+                </a>
+                <span class="navbar-burger burger" data-target="navbarMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    </span>
+            </div>
+            <div id="navbarMenu" class="navbar-menu">
+                <div class="navbar-end">
+                    <a href="login1/index.html" style="color:white; padding-top:13pt; padding-right:10pt">
+                        Log In
+                    </a>
+                    <a href="signup1/" style="color:white; padding-top:13pt">
+                        Sign Up
+                    </a>         
+                </div>
+            </div>
+        </nav>
+   
     <div id="picture">
-      <img src="./img/option1.png" width="1265">
+      <img src="./img/option2.png" width="1265" height="690">
       <div>Search Less 
           <br>
           Smile More</div>
@@ -48,6 +68,6 @@
         <a href="./signup1/index.html">Sign Up </a>
     </div>
     <script src="index.js"></script>
+    <script src="../js/bulma.js"></script>
 </body>
 </html>
- <!--git add . ; git commit -m 'message'; git push-->

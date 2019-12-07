@@ -15,7 +15,7 @@ export const renderLogInForm = function(){
             <br>
             <br> 
             <div id="boton">
-            <button class="logIn">Log In </button>
+            <button class="logIn">LOG IN </button>
             </div>
             <br>
             <br>
@@ -42,10 +42,12 @@ export async function handleLIPress(event){
             window.location.replace('../homepage/index.html');
             console.log(response.data);
         }).catch(error => {
+            $(`p`).remove();
+            $(`#title`).append(`<p>Invalid email or password</p>`)
             console.log(error);
         });
-    $(`p`).remove();
-    $(`#title`).append(`<p>Invalid email or password</p>`)
+    // $(`p`).remove();
+    // $(`#title`).append(`<p>Invalid email or password</p>`)
     
 }
 
