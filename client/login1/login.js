@@ -39,6 +39,7 @@ export async function handleLIPress(event){
             "pass": inputPass,
         });
         r.then(response => {
+
             localStorage.setItem('jwt', response.data.jwt);
             localStorage.setItem('username',response.data.name);
             var username = localStorage.getItem('username');
@@ -62,8 +63,8 @@ export async function handleLIPress(event){
                 console.log(error);
             }); 
 
+            window.location.replace('../homepage1/index.html');
 
-            window.location.replace('../homepage/index.html');
             console.log(response.data);
         }).catch(error => {
             $(`p`).remove();
