@@ -1,5 +1,6 @@
 export const renderCard = function(place) {
-    return ` <div class="column is-one-third">
+    return ` 
+    <div class="column is-one-third">
                 <div class="card large">
                     <div class="card-image">
                         <figure class="image">
@@ -18,7 +19,8 @@ export const renderCard = function(place) {
                         </div>
                     </div>
                 </div>
-            </div>`
+            </div>
+           `
 };
 
 export const buttonPress = async function(event){
@@ -79,13 +81,3 @@ $(function() {
         window.location.replace("../index.html")
    })
 });
-
-
-
-
-// axios.post('http://localhost:3000/user/favorite/',
-// {data:{"location": location, "address": address,"img":picture}}, {headers: {Authorization:`Bearer ${jwt}`}},{type: 'merge'}).then(response => {
-//     console.log(response.data);
-// }).catch(error => {
-//     console.log(error);
-// }); 

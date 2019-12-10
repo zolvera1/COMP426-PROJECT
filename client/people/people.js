@@ -1,43 +1,74 @@
+let $root = $(`#root`);
 
-const $root = $(`#root`);
-//$root.append(loadUsers());
 
-// export async function loadUsers() {
-//     return `<div>hi</div>`
-// }
-export const loadUsers = function(){
-    let r = axios.get('http://localhost:3000/account/status',
-        {
-           "Authorization": "Bearer" + jwt 
-        })
+export const loadFeed = function(){
+    $root.append(`
+        <br> <div id="bdiv">
+        <button class="boton" id="create"> New blog </button><br></div>
+        <hr>
+        <div id="blogs">
+        </div>`)
+    var jwt = localStorage.getItem('jwt');
+    var username = localStorage.getItem('username');
+    
+    let r = axios.get('http://localhost:3000/private/blogs', 
+    {headers: {Authorization:"Bearer "+jwt}});
+    r.then(response => {
+        for(let i = response.data.result.blog.length-1; i>-1; i--){
+            $root.append(`<div id="author">${response.data.result.name[i].name}</div>
+            <div id="blogs">
+                ${response.data.result.blog[i]}
+                <hr>
+            </div>
+            `)
+        }
+        console.log(response.data.result.blog.length);
+    }).catch(error => {
+        console.log(error);
+    })
+}
+export function createPost(event){
+   
+    // Adding textbox of tweet
+    $(`#bdiv`).append(`<textarea id="blog" placeholder="begin typing here"></textarea>`);
+    $(`#create`).replaceWith(`<button class="boton" id="post">Post</button`);
+    
+    //Posting tweet & updating server
+    $root.on("click","#post", async function(){
+        let post = document.getElementById(`blog`).value;
+        var jwt = localStorage.getItem('jwt');
+        var username = {name: localStorage.getItem('username')};
+        console.log(username);
 
-    return ` <div id="logInForm">
-        hey
+        axios.post('http://localhost:3000/private/blogs/blog',
+        {data:[post], type:"merge"}, {headers: {Authorization:`Bearer ${jwt}`}},{type: 'merge'})
+        .then(response => {
+           console.log(response.data);
+        }).catch(error => {
+           console.log(error);
+        });
 
-        </div>`
+        axios.post('http://localhost:3000/private/blogs/name',
+        {data:[username], type:"merge"}, {headers: {Authorization:`Bearer ${jwt}`}},{type: 'merge'})
+        .then(response => {
+           console.log(response.data);
+        }).catch(error => {
+           console.log(error);
+        });
+    window.location.reload();
+
+    
+    })
+   
 }
 
-// export async function handleLIPress(event){
-//     // Saves name & password inputs
-//     event.preventDefault();
-//     var inputEmail = document.getElementById('name').value;
-//     var inputPass = document.getElementById('pass').value;
-   
-//     let r = axios.post('http://localhost:3000/account/login',
-//         {
-//             "name": inputEmail,
-//             "pass": inputPass,
-//         });
-//         r.then(response => {
-//             window.location.replace('../homepage/index.html');
-//             console.log(response.data);
-//         }).catch(error => {
-//             $(`p`).remove();
-//             $(`#title`).append(`<p>Invalid email or password</p>`)
-//             console.log(error);
-//         });
-// }
 
 $(document).ready(function(){
-    $root.append(loadUsers());
+    $root.append(loadFeed());
+    $root.on("click","#create", createPost)
+    $(document).on("click", "#logout", function(){
+        localStorage.removeItem('jwt');
+        window.location.replace("../index.html")
+   })
+  
 });

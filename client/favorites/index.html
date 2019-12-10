@@ -29,7 +29,7 @@
                                     Explore
                                 </a>
                                 <a class="navbar-item" href="../people/index.html">
-                                    People
+                                    Blogs
                                 </a>
                                 <a class="navbar-item" href="../favorites/index.html">
                                     Favorites
@@ -39,14 +39,14 @@
                                         My account
                                     </a>
                                     <div class="navbar-dropdown">
-                                        <a class="navbar-item">
+                                        <a class="navbar-item" href="../profile/index.html">
                                             Profile
                                         </a>
                                         <a class="navbar-item">
                                             Preferences
                                         </a>
                                         <hr class="navbar-divider">
-                                        <div class="navbar-item">
+                                        <div class="navbar-item"id="logout">
                                              Logout
                                         </div>
                                     </div>
@@ -58,20 +58,30 @@
         <div id="container">
             <div id="text">   
                 <div id="title">
-                    My Favorites
+                    Favorites
                 </div>
                 <div id="subtitle">
-                    My bucket list items
-                </div>
-                <div id="root">
+                    Bucket List
                 </div>
             </div>
         </div>
+        <div class="container">
+                <div id="flow">
+                    <span class="flow-1"></span>
+                    <span class="flow-2"></span>
+                    <span class="flow-3"></span>
+                </div>
+                <div class="section">
+                        <div class="row columns is-multiline" id="rws">
+                                <div id="root">
+                                </div>
+                            </div> 
+                </div>
+            </div>
 
         <!-- Include links to JavaScript files below -->
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
         <script src=../node_modules/jquery/dist/jquery.js></script>
         <script src="fav.js" type="module"></script>
-        <script src="../node_modules/bulma/bulma/css/bulma.css"></script>
     </body>
 </html>

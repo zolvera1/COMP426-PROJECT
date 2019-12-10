@@ -49,8 +49,9 @@ export async function handleSUPress(event){
             }
         });
         r.then(response => {
-            console.log(response.data);
             window.location.replace('../homepage/index.html');
+            console.log(response.data);
+            //window.location.replace('../homepage/index.html');
         }).catch(error => { 
             console.log(error);
         });
@@ -95,3 +96,4 @@ $(document).ready(function(){
     $root.append(renderSignUpForm);
     $root.on("click",".signUp",handleSUPress);
 });
+

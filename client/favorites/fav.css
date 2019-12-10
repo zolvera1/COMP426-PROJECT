@@ -19,8 +19,23 @@ h{
 
 #subtitle{
     font-size: 40pt;
-    font-weight: bold;
     text-align: center;
-    color: rgb(201, 144, 23);
+    color:  rgb(9, 49, 94);
+}
+.label{
+    color: rgb(9, 49, 94);
+}
 
+.remB{
+    border-style: solid;
+    padding-top: 10pt;
+    padding-bottom: 10pt;
+    padding-left: 50pt;
+    padding-right: 50pt;
+    background-color: white;
+    border-color: rgb(201, 144, 23);
+    border-radius: 20pt;
+}
+#root{
+    text-align: center;
 }

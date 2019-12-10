@@ -31,7 +31,7 @@
                         Explore
                     </a>
                     <a class="navbar-item" href="../people/index.html">
-                        People
+                        Blogs
                     </a>
                     <a class="navbar-item" href="../favorites/index.html">
                         Favorites
@@ -41,14 +41,14 @@
                             My account
                         </a>
                         <div class="navbar-dropdown">
-                            <a class="navbar-item">
+                            <a class="navbar-item" href="../profile/index.html">
                                 Profile
                             </a>
                             <a class="navbar-item">
                                 Preferences
                             </a>
                             <hr class="navbar-divider">
-                            <div class="navbar-item">
+                            <div class="navbar-item" id="logout">
                                  Logout
                             </div>
                         </div>
@@ -102,6 +102,7 @@
                 
                 <!--LOS ANGELES CARD-->
                 <div class="column is-one-third">
+                    <a href="../laca/index.html">
                     <div class="card large">
                         <div class="card-image">
                             <figure class="image">
@@ -114,31 +115,33 @@
                             </div>
                         </div>
                     </div>
+                </a>
                 </div>
 
                 <!--NEW YORK CARD-->
                 <div class="column is-one-third">
-                    <div class="card large">
-                        <div class="card-image">
-                            <figure class="image">
-                                <img class="images"src="ny.jpg">
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <div class="media">
-                                <p class="title is-4 no-padding"style="text-align:center">New York, NY</p>
+                    <a href="../nyny/index.html">
+                        <div class="card large">
+                            <div class="card-image">
+                                <figure class="image">
+                                    <img class="images"src="ny.jpg">
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <div class="media">
+                                    <p class="title is-4 no-padding"style="text-align:center">New York, NY</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
             <!-- END CARDS -->
     <footer class="hpfooter">
     </footer>
-    <script src="../js/bulma.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src=../node_modules/jquery/dist/jquery.js></script>
-    <script src="login.js" type="module"></script>
+    <script src="homepage.js" type="module"></script>
 </body>
 
 </html>

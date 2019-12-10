@@ -39,6 +39,30 @@ export async function handleLIPress(event){
             "pass": inputPass,
         });
         r.then(response => {
+            localStorage.setItem('jwt', response.data.jwt);
+            localStorage.setItem('username',response.data.name);
+            var username = localStorage.getItem('username');
+            // console.log("a " + jwt);
+            // console.log(name) //this works
+
+            var jwt = localStorage.getItem('jwt');
+
+            axios.post('http://localhost:3000/user/favorite',
+            {data:{location:[],address:[],image:[]}}, {headers: {Authorization:`Bearer ${jwt}`}}).then(response => {
+            console.log(response.data);
+            }).catch(error => {
+                console.log(error);
+            }); 
+
+
+            axios.post('http://localhost:3000/private/blogs',
+            {data:{blog:[],name:[]}}, {headers: {Authorization:`Bearer ${jwt}`}}).then(response => {
+            console.log(response.data);
+            }).catch(error => {
+                console.log(error);
+            }); 
+
+
             window.location.replace('../homepage/index.html');
             console.log(response.data);
         }).catch(error => {
@@ -46,9 +70,6 @@ export async function handleLIPress(event){
             $(`#title`).append(`<p>Invalid email or password</p>`)
             console.log(error);
         });
-    // $(`p`).remove();
-    // $(`#title`).append(`<p>Invalid email or password</p>`)
-    
 }
 
 $(document).ready(function(){
