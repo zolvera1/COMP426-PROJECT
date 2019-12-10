@@ -39,7 +39,7 @@ export async function handleLIPress(event){
             "pass": inputPass,
         });
         r.then(response => {
-            window.location.replace('../homepage/index.html');
+            window.location.replace('../homepage1/index.html');
             console.log(response.data);
         }).catch(error => {
             $(`p`).remove();
