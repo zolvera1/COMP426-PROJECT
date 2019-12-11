@@ -35,6 +35,10 @@ h1, h2, h3{
 #map{
     height: 100%;
 }
+.is-active{
+    color:rgb(9, 49, 94);
+    background-color: rgb(9, 49, 94);
+}
 i {
     color:red;
     padding: 3px;

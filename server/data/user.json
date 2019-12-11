@@ -42,5 +42,39 @@
         }
       }
     }
+  },
+  "yasmin": {
+    "favorite": {
+      "location": [
+        "The Old Well",
+        "Hollywood Sign",
+        "The Last Bookstore",
+        " Morehead Planetarium and Science Center ",
+        " Homestead Park ",
+        " Ackland Art Museum ",
+        " Carolina Basketball Museum ",
+        " Carrboro Community Garden "
+      ],
+      "address": [
+        "E Cameron Ave, Chapel Hill, NC 27514",
+        "Hollywood Sign, Los Angeles, CA 90068",
+        "453 S Spring St, Los Angeles, CA 90013",
+        " \n        250 East Franklin Street, Chapel Hill \n        ",
+        " \n        100 Northern Park Drive, Chapel Hill \n        ",
+        " \n        101 South Columbia Street, Chapel Hill \n        ",
+        " \n        450 Skipper Bowles Drive, Chapel Hill \n        ",
+        " \n        1120 Hillsborough Road, Chapel Hill \n        "
+      ],
+      "image": [
+        "http://localhost:3001/chnc/imgs/oldwell.jpg",
+        "http://localhost:3001/laca/img/hw.jpg",
+        "http://localhost:3001/laca/img/lastbook.jpg",
+        "https://maps.googleapis.com/maps/api/place/js/PhotoService.GetPhoto?1sCmRaAAAAe9Ue6T99H6eUi6Qv2qldlyNurawZYiHMIfX4YEG2bW87JEya_mZFoJNDIEtevLHscU1wJSiYbmsMwcQP7qjKF6wbfuufwmZ11j7Q1_GZ2yPjLthvznCBdZqSMrqVqqoDEhCVE47IALflhssZIarnEsAMGhSSvThLvdcQjI28Y86Y-Ejr7CgbFg&3u1200&5m1&2e1&callback=none&key=AIzaSyBGWUB0Cw0-nco2gEEXETWFai3a-fpdtmM&token=125813",
+        "https://maps.googleapis.com/maps/api/place/js/PhotoService.GetPhoto?1sCmRaAAAAYASTP4X2iG2zvEtzjeutOrsx_8mqnZxMLoDBM3PpZKHJhbTmRpS5ZUoBwMmtx1eoRv73rROgDHID2IGhbQZ4ITrWqSTGhy0svUWmHRI9UjSg8yRN_8ZjTx--zKfFgsKxEhBQuNKkb0vbLF5rM9OVpzoHGhT1aMcLUtj3rFunRfm2O83ntKJbug&3u4160&5m1&2e1&callback=none&key=AIzaSyBGWUB0Cw0-nco2gEEXETWFai3a-fpdtmM&token=107198",
+        "https://maps.googleapis.com/maps/api/place/js/PhotoService.GetPhoto?1sCmRaAAAAIQvk88N_W6A0RCK1MElFKpeo18HkKepnNCHiLwI34zjDYNuSYrdJuH87lYntNgETkcEl_eHCTPQjI3n84M_mHpyYfdYL-JYZSVXYO-BmKbMi4DWoQXbvxGS4jz4kXNe8EhDgA5pgPJL01zq_v3WzmztJGhRj8Mf9PaJXtpwm0-38_u2hvtQ-1Q&3u4032&5m1&2e1&callback=none&key=AIzaSyBGWUB0Cw0-nco2gEEXETWFai3a-fpdtmM&token=69073",
+        "https://maps.googleapis.com/maps/api/place/js/PhotoService.GetPhoto?1sCmRaAAAArSGfHhnEz4w1-vCvlDDN5eFeq2qK4UhmwmJ-LU9qRGmBTUbTKIEv3vCDtfCdchKWDTW4hbGnNzR_kvHtAGoZwxeADA8hB_BMmeaZKRVhWfmMHu1QSF_NNUxGL8nks67LEhC5fXvTuWr3k5ViEQQz_7_5GhSnG13yP9vJv_6ns4DRmrLxTLgRRw&3u4032&5m1&2e1&callback=none&key=AIzaSyBGWUB0Cw0-nco2gEEXETWFai3a-fpdtmM&token=128047",
+        "https://maps.googleapis.com/maps/api/place/js/PhotoService.GetPhoto?1sCmRaAAAApDGjhowyPhvnFs2a7mahQV2lzaHgBfrFHfDU7wCW5UKslUHvNSpgeZPCWJyW8nF5ihYvlx7aZRivFxxl2CGAwmxl60e-kAa9TesyFuduSSkSNvDs51060JA3VpBTYcjjEhDx7OoqP1XUqEXqEvN-nn7OGhQtwe4hUJFIWOjS50JQ9_BcgsBRQg&3u3264&5m1&2e1&callback=none&key=AIzaSyBGWUB0Cw0-nco2gEEXETWFai3a-fpdtmM&token=178"
+      ]
+    }
   }
 }
