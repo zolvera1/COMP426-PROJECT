@@ -1,13 +1,23 @@
+
 html, body {
     height: 100%;
     margin: 0;
     padding: 0;
 }
+h{
+    color: black;
+    font-size: 20pt;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
 #map{
     height: 100%;
 }
-.map-container {
-    width: 400px;
-    height: 400px;
-
-}
+.address-label{
+    color: rgb(201, 144, 23)
+};
+/* .map-container {
+    width: 700px;
+    height: 500px;
+} */

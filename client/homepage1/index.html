@@ -6,14 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Picturesque</title>
     <link rel="shortcut icon" href="../images/fav_icon.png" type="image/x-icon"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet"/>
     <!-- Bulma Version 0.8.x-->
     <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css"/>
     <link rel="stylesheet" type="text/css" href="../css/map.css" />
-    <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css" />
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<<<<<<< HEAD
+    <!-- <link rel="stylesheet" href="../homepage/homepage.css"> -->
+=======
     <link rel="stylesheet" href="homepage.css">
+>>>>>>> 646a1ce2795cfa98f282139db649e2b6494595f8
   </head>
 
       <body style="background-image:'../img/colors.jpeg'">
@@ -71,8 +73,12 @@
              Start your trip here
             </h1>
             <h2 class="subtitle">
+<<<<<<< HEAD
+              Begin your search here
+=======
               <br>
 
+>>>>>>> 646a1ce2795cfa98f282139db649e2b6494595f8
             </h2>
             <div class="box">
               <div class="field is-grouped">
@@ -86,7 +92,7 @@
                 </p>
                 <div class="control">
                     <div class="select is-info">
-                      <select>
+                      <select id="radius-select">
                         <option>Miles..</option>
                         <option value=5>5</option>
                         <option value=10>10</option>
@@ -99,22 +105,21 @@
                       <a id="location-search" class="button is-info" style="background-color:rgb(9, 49, 94)">
                         Search
                       </a>
-                  <!-- </p>
-                <p class="control">
-                  <a id="location-search" class="button is-info">
-                    Search
-                  </a>
-                </p> -->
+                  </p>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-   <div id="mappa">
-    <div class="map-container">
+   
+    
       <div id="map"></div>
-    </div>
+      <div class="cards-container">
+          <div class="columns is-multiline is-fullheight">
+
+          </div>
+      </div>
+    
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script
