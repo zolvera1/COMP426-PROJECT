@@ -9,8 +9,6 @@
     <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css" />
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/landing.css">
- 
-
 </head>
 <body>
     <nav class="navbar" style="background-color:rgb(9, 49, 94);">
@@ -46,10 +44,16 @@
         <div id=ansel>- Ansel Adams</div>
     </div>
     <div id=bottom>
-        <a href="team.html">Meet the Team |</a>
+        <div id="reviews">Check out what people are saying about our app:</div>
+        <div id="comments"><br></div>
+        <br>
+        <button id="boton">Leave a review</button>
+        <br>
         <a href="login1/index.html">Login |</a>
         <a href="./signup1/index.html">Sign Up </a>
     </div>
-    <script src="index.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src=../node_modules/jquery/dist/jquery.js></script>
+    <script src="index.js" type="module"></script>
 </body>
 </html>

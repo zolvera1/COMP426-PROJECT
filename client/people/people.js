@@ -29,11 +29,9 @@ export const loadFeed = function(){
 }
 export function createPost(event){
    
-    // Adding textbox of tweet
     $(`#bdiv`).append(`<textarea id="blog" placeholder="begin typing here"></textarea>`);
     $(`#create`).replaceWith(`<button class="boton" id="post">Post</button`);
     
-    //Posting tweet & updating server
     $root.on("click","#post", async function(){
         let post = document.getElementById(`blog`).value;
         var jwt = localStorage.getItem('jwt');

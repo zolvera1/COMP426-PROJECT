@@ -67,3 +67,59 @@ a{
     font-size: 10pt;
     
 }
+
+#boton{
+    display:block;
+    border-style: solid;
+    padding-top: 10pt;
+    padding-bottom: 10pt;
+    padding-left: 50pt;
+    padding-right: 50pt;
+    background-color: white;
+    border-color:   rgb(9, 49, 94);
+    border-radius: 20pt;
+    margin-left: auto;
+    margin-right: auto;
+}
+#reviews{
+    color: rgb(201, 144, 23);
+}
+
+#comments{
+    font-size: 10pt;
+    font-style: italic;
+    padding-left: 160pt;
+    padding-right:160pt;
+}
+#rev {
+    display: block;
+    width: 50%;
+    height: 100pt;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: sold;
+    border-color:rgb(201, 144, 23);
+}
+hr{
+    width: 50%;
+    margin-left:auto;
+    margin-right:auto;
+}
+.post{
+    display:block;
+    border-style: solid;
+    padding-top: 10pt;
+    padding-bottom: 10pt;
+    padding-left: 50pt;
+    padding-right: 50pt;
+    background-color: white;
+    border-color:   rgb(9, 49, 94);
+    border-radius: 20pt;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.is-active{
+    color:rgb(9, 49, 94);
+    background-color: rgb(9, 49, 94);
+}
