@@ -31,6 +31,7 @@ let loadFavs = async function(){
                             <p class="label">Address: </p>
                             <a href="https://www.google.com/maps/dir/?api=1&orgin=&destination=${response.data.result.location[i]}"class="address">${response.data.result.address[i]}</a>
                             <br>
+                            <button id="remove">Remove from Favorites</button>
                         </div>
                     </div>
                 </div>
