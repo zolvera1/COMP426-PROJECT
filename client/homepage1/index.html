@@ -13,16 +13,16 @@
     <link rel="stylesheet" type="text/css" href="../css/map.css" />
     <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css" />
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="../homepage/homepage.css">
+    <link rel="stylesheet" href="homepage.css">
   </head>
 
-      <body style="background-color: rgb(248, 245, 218)">
+      <body style="background-image:'../img/colors.jpeg'">
         <!-- START NAV -->
-        <nav class="navbar" style="background-color: rgb(248, 245, 218)">
+        <nav class="navbar" style="background-color:  rgb(9, 49, 94)">
             <div class="container">
                 <div class="navbar-brand">
                     <a class="navbar-item" href="../homepage/index.html">
-                        <h>Picturesque</h> 
+                        <h style="color: white">Picturesque</h> 
                     </a>
                     <span class="navbar-burger burger" data-target="navbarMenu">
                         <span></span>
@@ -30,19 +30,19 @@
                         <span></span>
                         </span>
                 </div>
-                <div id="navbarMenu" class="navbar-menu">
-                    <div class="navbar-end">
-                        <a class="navbar-item is-active" href="../homepage/index.html">
+                <div id="navbarMenu" class="navbar-menu" style="color:white">
+                    <div class="navbar-end"style="color:white">
+                        <a class="navbar-item is-active" href="../homepage/index.html"style="color:white">
                             Explore
                         </a>
-                        <a class="navbar-item" href="../people/index.html">
+                        <a class="navbar-item" href="../people/index.html"style="color:white">
                             Blogs
                         </a>
-                        <a class="navbar-item" href="../favorites/index.html">
+                        <a class="navbar-item" href="../favorites/index.html"style="color:white">
                             Favorites
                         </a>
-                        <div class="navbar-item has-dropdown is-hoverable">
-                            <a class="navbar-link">
+                        <div class="navbar-item has-dropdown is-hoverable"style="color:white">
+                            <a class="navbar-link" style="color:white">
                                 My account
                             </a>
                             <div class="navbar-dropdown">
@@ -64,22 +64,14 @@
         </nav>
         <!-- END NAV -->
 
-
-
-
-
-
-
-
-
       <div class="hero-body">
         <div class="container has-text-centered">
           <div class="column is-6 is-offset-3">
             <h1 class="title">
-              Picturesque
+             Start your search here
             </h1>
             <h2 class="subtitle">
-              Begin your search here
+              <br>
 
             </h2>
             <div class="box">
@@ -92,7 +84,6 @@
                     placeholder="Enter a location..."
                   />
                 </p>
-<<<<<<< HEAD
                 <div class="control">
                     <div class="select is-info">
                       <select>
@@ -106,26 +97,23 @@
                   </div>
                   <p class="control">
                       <a id="location-search" class="button is-info">
-                        Search!
+                        Search
                       </a>
-                  </p>
-=======
+                  <!-- </p>
                 <p class="control">
                   <a id="location-search" class="button is-info">
                     Search
                   </a>
-                </p>
->>>>>>> b2e57ae560f8878660ed77f85c8c8a81bd707ce9
+                </p> -->
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="map-container">
-          <div id="map"></div>
-        </div>
     </section>
-    
+    <div class="map-container">
+      <div id="map"></div>
+    </div>
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script

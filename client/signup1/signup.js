@@ -49,7 +49,7 @@ export async function handleSUPress(event){
             }
         });
         r.then(response => {
-            window.location.replace('../homepage/index.html');
+            window.location.replace('../homepage1/index.html');
             console.log(response.data);
             //window.location.replace('../homepage/index.html');
         }).catch(error => { 
