@@ -68,3 +68,22 @@ h{
     color: rgb(9, 49, 94);
 
 }
+
+#bottom {
+    background-color: white;
+    color: rgb(77, 77, 74);
+    padding-top: 30pt;
+    padding-bottom: 30pt;
+    text-align: center;
+    text-decoration: none;
+}
+.link{
+    color: white;
+    font-size:13pt;
+    text-decoration:none;
+}
+a{
+    color: rgb(77, 77, 74);
+    text-decoration: none;
+
+}

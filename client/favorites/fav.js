@@ -4,7 +4,6 @@ $(document).ready(function(){
         localStorage.removeItem('jwt');
         window.location.replace("../index.html")
    })
-   // $(document).on("click",".remB", deleteButton)
 })
 
 let loadFavs = async function(){

@@ -22,7 +22,7 @@ export const loadFeed = function(){
             </div>
             `)
         }
-        console.log(response.data.result.blog.length);
+        console.log(response.data);
     }).catch(error => {
         console.log(error);
     })
