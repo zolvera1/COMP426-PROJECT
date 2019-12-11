@@ -63,3 +63,5 @@ typings/
 #.ds_store
 .idea
 .DS_Store
+#information 
+./server/data
