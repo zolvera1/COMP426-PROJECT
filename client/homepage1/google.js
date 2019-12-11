@@ -75,35 +75,75 @@ const milesToMeters = mi => {
 
 const renderCards = place => {
   let photo = place.photos;
+  let id = place.place_id;
   let html = 
   `
-  <div class="column is-half">
+  <div class="column is-one-third">
     <div class="card"> 
 
       <div class="card-image">
         <figure class="image is-4by3">
-          <img src=${photo[0].getUrl()}>
+          <img id="image-${id}"src=${photo[0].getUrl()}>
         </figure>
       </div>
 
       <div class="card-content">
         <div class="media">
           <div class="media-content">
-            <p class="title is-4"> ${place.name} </p>
+            <p id="name-${id}"class="title is-4"> ${place.name} </p>
           </div>
         </div>
         <div class="content"> 
         <p class="address-label"> Address: </p>
-        <p class="address"> ${place.vicinity} </p>
+        <a 
+        href="https://www.google.com/maps/dir/?api=1&orgin=&destination=${place.name}&destination_place_id=${id}"
+        id="addy-${id}"
+        class="address"> 
+        ${place.vicinity} 
+        </a>
         </div>
       </div>
         <footer class="card-footer">
-          <a class="card-footer-item"> Favorite it!</a>
+          <button id="${id}"class="button card-footer-item"><i class="fas fa-heart"></i> Favorite it!</button>
         </footer>
     </div>
   </div>
   `
   $('.columns').append(html)
 };
+const favoriteHandler = async e => {
+  e.preventDefault();
+  let cardId = e.target.id;
+  var name = document.getElementById(`name-${cardId}`).innerHTML;
+  var address = document.getElementById(`addy-${cardId}`).innerHTML;
+  var picture = document.getElementById(`image-${cardId}`).src;
+  var jwt = localStorage.getItem('jwt');
+  axios.post('http://localhost:3000/user/favorite/location',
+  {data:[name], type:"merge"}, {headers: {Authorization:`Bearer ${jwt}`}},{type: 'merge'})
+  .then(response => {
+      console.log(response.data);
+  }).catch(error => {
+      console.log(error);
+  }); 
+  
+axios.post('http://localhost:3000/user/favorite/address',
+  {data:[address], type:"merge"}, {headers: {Authorization:`Bearer ${jwt}`}},{type: 'merge'})
+  .then(response => {
+      console.log(response.data);
+  }).catch(error => {
+      console.log(error);
+  });
+
+axios.post('http://localhost:3000/user/favorite/image',
+  {data:[picture], type:"merge"}, {headers: {Authorization:`Bearer ${jwt}`}},{type: 'merge'})
+  .then(response => {
+      console.log(response.data);
+  }).catch(error => {
+      console.log(error);
+  });
+
+
+}
 google.maps.event.addDomListener(window, "load", initalize);
 $("#location-search").on("click", searchHandler);
+$('.columns').on('click','.button.card-footer-item', favoriteHandler);
