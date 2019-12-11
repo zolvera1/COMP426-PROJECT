@@ -12,6 +12,7 @@ h{
     
 }
 
+
 #container{
    background-color: white;
     margin-top: 80pt; 
@@ -20,7 +21,8 @@ h{
     width: 600pt;
     margin-left: 20%;
     margin-right: 15%; 
-    margin-bottom: 80pt; 
+    margin-bottom: 80%;
+    
 }
 
 #title{
@@ -35,7 +37,8 @@ h{
     font-weight: normal;
     font-size: 15pt;
     margin-top: 15pt;
-    padding-left:50%;   
+    padding-left:50%;
+       
 }
 
 form{

@@ -24,6 +24,13 @@
           "lname": "Gomez Olvera"
         }
       }
+    },
+    "yasmin": {
+      "passwordHash": "$2a$10$jaqrngxRwj5DpbwBHByJuezo3sW64d1CWwhSdgalCQsYJyO0H3Eta",
+      "data": {
+        "name": "Yasmin",
+        "lname": "Yasmin"
+      }
     }
   }
 }
