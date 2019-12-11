@@ -1,4 +1,3 @@
-
 var map;
 var service;
 var infowindow;
@@ -6,7 +5,6 @@ function initalize() {
   var input = document.getElementById("searchTextField");
   var auto = new google.maps.places.Autocomplete(input);
 }
-google.maps.event.addDomListener(window, "load", initalize);
 
 
 const searchHandler = async e => {
@@ -27,11 +25,13 @@ const searchHandler = async e => {
   lat = result.data.results[0].geometry.location.lat;
   long = result.data.results[0].geometry.location.lng;
   initMap(lat, long);
-}
+};
 
 function initMap(lat, long) {
   var coord = new google.maps.LatLng(lat, long);
   var val = $("#searchTextField").val();
+  var radius = $("#radius-select").val();
+  var meters = milesToMeters(radius);
   map = new google.maps.Map(document.getElementById("map"), {
     center: {
       lat: lat,
@@ -39,21 +39,22 @@ function initMap(lat, long) {
     },
     zoom: 15
   });
-  
+  console.log(meters);
   var request = {
-    location : coord,
-    radius: 5000,
-    type: ['tourist_attraction']
-  }
+    location: coord,
+    radius: meters,
+    type: ["tourist_attraction"]
+  };
   service = new google.maps.places.PlacesService(map);
-  service.nearbySearch(request,callBack);
-  
+  service.nearbySearch(request, callBack);
 }
 function callBack(results, status) {
-  if(status == google.maps.places.PlacesServiceStatus.OK) {
-    for(var i = 0; i < results.length; i++) {
+  if (status == google.maps.places.PlacesServiceStatus.OK) {
+    for (var i = 0; i < results.length; i++) {
       var place = results[i];
-      createMarker(place)
+      console.log(place)
+      renderCards(place);
+      createMarker(place);
     }
   }
 }
@@ -63,12 +64,46 @@ function createMarker(place) {
     map: map,
     position: place.geometry.location
   });
-  google.maps.event.addListener(marker, 'click', function(){
+  google.maps.event.addListener(marker, "click", function() {
     infowindow.setContent(place.name);
-    infowindow.open(map, this)
-  })
+    infowindow.open(map, this);
+  });
 }
 const milesToMeters = mi => {
-  return (mi / 0.00062137);
-}
-$("#location-search").on("click",searchHandler)
+  return mi / 0.00062137;
+};
+
+const renderCards = place => {
+  let photo = place.photos;
+  let html = 
+  `
+  <div class="column is-half">
+    <div class="card"> 
+
+      <div class="card-image">
+        <figure class="image is-4by3">
+          <img src=${photo[0].getUrl()}>
+        </figure>
+      </div>
+
+      <div class="card-content">
+        <div class="media">
+          <div class="media-content">
+            <p class="title is-4"> ${place.name} </p>
+          </div>
+        </div>
+        <div class="content"> 
+        <p class="address-label"> Address: </p>
+        <p class="address"> ${place.vicinity} </p>
+        </div>
+      </div>
+        <footer class="card-footer">
+          <a class="card-footer-item"> Favorite it!</a>
+        </footer>
+    </div>
+  </div>
+  `
+  $('.columns').append(html)
+};
+google.maps.event.addDomListener(window, "load", initalize);
+$("#location-search").on("click", searchHandler);
