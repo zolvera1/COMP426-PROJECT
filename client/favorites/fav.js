@@ -51,7 +51,7 @@ let loadFavs = async function(){
                         <div class="media-content">
                             <p class="title is-4 no-padding" id="location-${i}">${response.data.result.location[i]}</p>
                             <p class="label">Address: </p>
-                            <a href="https://www.google.com/maps/dir/?api=1&orgin=&destination=${response.data.result.location[i]}"class="address" id="addy-${i}">${response.data.result.address[i]}</a>
+                            <a class="address" id="addy-${i}" href="https://www.google.com/maps/dir/?api=1&orgin=&destination=${response.data.result.location[i]}">${response.data.result.address[i]}</a>
                             <br>
                             <br>
                         </div>
