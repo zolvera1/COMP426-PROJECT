@@ -14,10 +14,11 @@ export const loadFeed = function(){
     let r = axios.get('http://localhost:3000/private/blogs', 
     {headers: {Authorization:"Bearer "+jwt}});
     r.then(response => {
-        for(let i = response.data.result.blog.length-1; i>-1; i--){
-            $root.append(`<div id="author">${response.data.result.name[i].name}</div>
+        console.log(response.data.result[0].post)
+        for(let i = response.data.result.length-1; i>-1; i--){
+            $root.append(`<div id="author">${response.data.result[i].name}</div>
             <div id="blogs">
-                ${response.data.result.blog[i]}
+                ${response.data.result[i].post}
                 <hr>
             </div>
             `)
@@ -35,24 +36,24 @@ export function createPost(event){
     $root.on("click","#post", async function(){
         let post = document.getElementById(`blog`).value;
         var jwt = localStorage.getItem('jwt');
-        var username = {name: localStorage.getItem('username')};
+        var username = localStorage.getItem('username');
         console.log(username);
 
-        axios.post('http://localhost:3000/private/blogs/blog',
-        {data:[post], type:"merge"}, {headers: {Authorization:`Bearer ${jwt}`}},{type: 'merge'})
+        axios.post('http://localhost:3000/private/blogs',
+        {data: {post:post,name:username}, type:"merge"}, {headers: {Authorization:`Bearer ${jwt}`}},{type: 'merge'})
         .then(response => {
            console.log(response.data);
         }).catch(error => {
            console.log(error);
         });
 
-        axios.post('http://localhost:3000/private/blogs/name',
-        {data:[username], type:"merge"}, {headers: {Authorization:`Bearer ${jwt}`}},{type: 'merge'})
-        .then(response => {
-           console.log(response.data);
-        }).catch(error => {
-           console.log(error);
-        });
+        // axios.post('http://localhost:3000/private/blogs/name',
+        // {data:[username], type:"merge"}, {headers: {Authorization:`Bearer ${jwt}`}},{type: 'merge'})
+        // .then(response => {
+        //    console.log(response.data);
+        // }).catch(error => {
+        //    console.log(error);
+        // });
     window.location.reload();
 
     

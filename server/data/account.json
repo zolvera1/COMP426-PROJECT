@@ -81,6 +81,34 @@
         "name": "carla",
         "lname": "carla"
       }
+    },
+    "hey": {
+      "passwordHash": "$2a$10$r5ZGqbXQOXa/NytdTDxItOm.NhwVEgp6LJNjePBcQFdQK.l11D.vq",
+      "data": {
+        "name": "hey",
+        "lname": "hey"
+      }
+    },
+    "mouse": {
+      "passwordHash": "$2a$10$D.EHoTYT8q4/MIgxfCL3UOZEmbmzGHVypMBo3iukWY9yEVmJvqImG",
+      "data": {
+        "name": "mouse",
+        "lname": "mouse"
+      }
+    },
+    "new": {
+      "passwordHash": "$2a$10$jExKysIvR3mTfkXYCWyO2eCc.LN1GHzqfnkyjWQAWAYzZaEg..MrG",
+      "data": {
+        "name": "new",
+        "lname": "new"
+      }
+    },
+    "haha": {
+      "passwordHash": "$2a$10$szO5h2y12EgiqW1qjMBXtOq9BZ..51jm/41vq4LQvDaheDM8RrcEC",
+      "data": {
+        "name": "haha",
+        "lname": "haha"
+      }
     }
   }
 }

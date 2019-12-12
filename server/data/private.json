@@ -1,32 +1,24 @@
 {
-  "blogs": {
-    "blog": [
-      "Blog!",
-      "hello i am elise",
-      "Hello",
-      "“And that's when I know it's over. As soon as you start thinking about the beginning, it's the end.”",
-      "askldfjds;lkj;",
-      "sklwerjljl"
-    ],
-    "name": [
-      {
-        "name": "samyolvera1@gmail.com"
-      },
-      {
-        "name": "annelise.butterworth@gmail.com"
-      },
-      {
-        "name": "yasmin.aguilar906@gmail.com"
-      },
-      {
-        "name": "carla"
-      },
-      {
-        "name": "carla"
-      },
-      {
-        "name": "carla"
-      }
-    ]
-  }
+  "blogs": [
+    {
+      "post": "test",
+      "name": "carla"
+    },
+    {
+      "post": "hello",
+      "name": "carla"
+    },
+    {
+      "post": "test test 123 123",
+      "name": "haha"
+    },
+    {
+      "post": "does this work?",
+      "name": "carla"
+    },
+    {
+      "post": "yay it works",
+      "name": "carla"
+    }
+  ]
 }
