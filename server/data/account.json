@@ -18,11 +18,36 @@
         }
       }
     },
-    "yasmin": {
-      "passwordHash": "$2a$10$jaqrngxRwj5DpbwBHByJuezo3sW64d1CWwhSdgalCQsYJyO0H3Eta",
-      "data": {
-        "name": "Yasmin",
-        "lname": "Yasmin"
+    "annelise": {
+      "butterworth@gmail": {
+        "com": {
+          "passwordHash": "$2a$10$xPGPZpagJMHCSGx4LLfJuO.hZgfOPmV.9Lji86z.ZcLTyi49KPHV.",
+          "data": {
+            "name": "Ann",
+            "lname": "Butterworth"
+          }
+        }
+      }
+    },
+    "123@yahoo": {
+      "com": {
+        "passwordHash": "$2a$10$CHni6kMLQdnduxZJXiNLa.mA9UB6OTrwykDCSxwGe.HgaGFG72d2u",
+        "data": {
+          "name": "sam",
+          "lname": "olv"
+        }
+      }
+    },
+    "asdfsfasdfas": {
+      "passwordHash": "$2a$10$jMZvd.B6uGjfGbtvdA1qz.WNwPNMt4acI71tyeTImwbc/fqyaAXbq"
+    },
+    "johndoe@yahoo": {
+      "com": {
+        "passwordHash": "$2a$10$8JSdbCxUk9cPUVAahV/sI.nFNTn4edYuaVvIbEkx2uQrCHQZbCws6",
+        "data": {
+          "name": "John",
+          "lname": "Doe"
+        }
       }
     }
   }
