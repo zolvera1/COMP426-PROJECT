@@ -65,16 +65,3 @@ let loadFavs = async function(){
         })
         
 }
-
-        // var jwt = localStorage.getItem('jwt');
-       //console.log("button clicked");
-//        let r = axios.delete('http://localhost:3000/user/favorite/', 
-//        {
-//            headers: {
-//                Authorization:"Bearer "+jwt}});
-//        r.then(response => {
-
-//            console.log(response.data.result);
-//        }).catch(error => {
-//            console.log(error);
-//        })

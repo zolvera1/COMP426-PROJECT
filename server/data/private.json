@@ -3,7 +3,11 @@
     "blog": [
       "Blog!",
       "hello i am elise",
+<<<<<<< HEAD
       "Hello! Here is a test blog (:"
+=======
+      "Hello"
+>>>>>>> f77df5271d80541e454803ef9d490594d635f927
     ],
     "name": [
       {
@@ -13,7 +17,11 @@
         "name": "annelise.butterworth@gmail.com"
       },
       {
+<<<<<<< HEAD
         "name": "samyolvera1@gmail.com"
+=======
+        "name": "yasmin.aguilar906@gmail.com"
+>>>>>>> f77df5271d80541e454803ef9d490594d635f927
       }
     ]
   }
