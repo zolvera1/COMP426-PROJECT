@@ -101,11 +101,14 @@ const renderCards = place => {
         class="address"> 
         ${place.vicinity} 
         </a>
+        <br>
+        <br>
+        <button id="${id}"class="button card-footer-item" class="favB" style="border-style:solid; padding-top: 10pt; padding-bottom: 20pt; padding-left:50pt; padding-right:50pt; background-color: white; border-color: pink; border-radius:20pt; margin-left: auto; margin-right: auto;"><i class="fas fa-heart"></i> Add to Favorites</button>
+
         </div>
       </div>
-        <footer class="card-footer">
-          <button id="${id}"class="button card-footer-item"><i class="fas fa-heart"></i> Favorite it!</button>
-        </footer>
+        
+          
     </div>
   </div>
   `

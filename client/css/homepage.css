@@ -51,4 +51,13 @@ i {
     color: rgb(201, 144, 23)
 };
 
-
+.favB{
+    border-style: solid;
+    padding-top: 10pt;
+    padding-bottom: 10pt;
+    padding-left: 50pt;
+    padding-right: 50pt;
+    background-color: white;
+    border-color: pink;
+    border-radius: 20pt;
+}
