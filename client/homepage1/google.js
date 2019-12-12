@@ -110,8 +110,6 @@ const renderCards = place => {
         </footer>
         </div>
       </div>
-        
-          
     </div>
   </div>
   `

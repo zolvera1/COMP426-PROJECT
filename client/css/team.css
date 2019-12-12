@@ -72,3 +72,8 @@ h{
   font-weight: bold;
   text-align: center;
 }
+.is-active{
+  color:rgb(9, 49, 94);
+  background-color: rgb(9, 49, 94);
+
+}
