@@ -79,7 +79,7 @@ const renderCards = place => {
   let html = 
   `
   <div class="column is-one-third">
-    <div class="card"> 
+    <div class="card" style="height:100%"> 
 
       <div class="card-image">
         <figure class="image is-4by3">
