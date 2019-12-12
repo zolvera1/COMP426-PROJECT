@@ -106,7 +106,7 @@ const renderCards = place => {
         <br>
         <br>
         <footer class="card-footer">
-        <button id="${id}"class="button card-footer-item" class="favB" style="border-style:solid; padding-top: 10pt; padding-bottom: 20pt; padding-left:50pt; padding-right:50pt; background-color: white; border-color: pink; border-radius:20pt; margin-left: auto; margin-right: auto;"><i class="fas fa-heart"></i> Add to Favorites</button>
+        <button id="${id}"class="button card-footer-item" class="favB" style="border-style:solid; padding-top: 10pt; padding-bottom: 20pt; padding-left:50pt; padding-right:50pt; background-color: white; border-color: pink; border-radius:20pt; margin-left: auto; margin-right: auto; margin-top:auto;"><i class="fas fa-heart"></i> Add to Favorites</button>
         </footer>
         </div>
       </div>
