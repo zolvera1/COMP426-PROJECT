@@ -2,7 +2,8 @@
   "blogs": {
     "blog": [
       "Blog!",
-      "hello i am elise"
+      "hello i am elise",
+      "Hello"
     ],
     "name": [
       {
@@ -10,6 +11,9 @@
       },
       {
         "name": "annelise.butterworth@gmail.com"
+      },
+      {
+        "name": "yasmin.aguilar906@gmail.com"
       }
     ]
   }

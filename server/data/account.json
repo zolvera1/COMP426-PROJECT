@@ -63,6 +63,24 @@
         "name": "aguilar",
         "lname": "aguilar"
       }
+    },
+    "yasmin": {
+      "aguilar906@gmail": {
+        "com": {
+          "passwordHash": "$2a$10$WkPMxdCxgDWFTRVuDniIOOu6UThcHHsb.bFaDrhA/DPalKti3LQ7W",
+          "data": {
+            "name": "test",
+            "lname": "test"
+          }
+        }
+      }
+    },
+    "carla": {
+      "passwordHash": "$2a$10$W2DXfwb/Q5k47dNWFniBquQxEmWwJf/G95mTRV/0MHR7MPXA1Q3fC",
+      "data": {
+        "name": "carla",
+        "lname": "carla"
+      }
     }
   }
 }
