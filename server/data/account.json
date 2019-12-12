@@ -1,5 +1,12 @@
 {
   "users": {
+    "123": {
+      "passwordHash": "$2a$10$MPTp1lJp3RwvlzuF6FHJSe32H1E4hdDH29hKeErCt8FN0p927z3rG",
+      "data": {
+        "name": "123",
+        "lname": "123"
+      }
+    },
     "hello@yahoo": {
       "com": {
         "passwordHash": "$2a$10$YKiWQHXMsMrV0.Ctrz/jNusX/mOm2GSwFhdk9rkQAyiQYjm/SOK6G",
@@ -48,6 +55,13 @@
           "name": "John",
           "lname": "Doe"
         }
+      }
+    },
+    "aguilar": {
+      "passwordHash": "$2a$10$oVDD6U421gcZ77ltVmbwtedAwGCClNthK9xS1fOJ6IcUhnalT6lRK",
+      "data": {
+        "name": "aguilar",
+        "lname": "aguilar"
       }
     }
   }
