@@ -65,3 +65,5 @@ typings/
 .DS_Store
 #information 
 ./server/data
+server/data/account.json
+server/data/account.json
