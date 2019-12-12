@@ -32,12 +32,13 @@ function initMap(lat, long) {
   var val = $("#searchTextField").val();
   var radius = $("#radius-select").val();
   var meters = milesToMeters(radius);
+ if(validateFields(radius)){
   map = new google.maps.Map(document.getElementById("map"), {
     center: {
       lat: lat,
       lng: long
     },
-    zoom: 15
+    zoom: 12
   });
   console.log(meters);
   var request = {
@@ -47,6 +48,7 @@ function initMap(lat, long) {
   };
   service = new google.maps.places.PlacesService(map);
   service.nearbySearch(request, callBack);
+}
 }
 function callBack(results, status) {
   if (status == google.maps.places.PlacesServiceStatus.OK) {
@@ -144,6 +146,14 @@ axios.post('http://localhost:3000/user/favorite/image',
 
 
 }
+const validateFields = val => {
+  if(val == "") {
+    alert('Please select an option!');
+    return false;
+  }
+  return true;
+}
 google.maps.event.addDomListener(window, "load", initalize);
 $("#location-search").on("click", searchHandler);
+// $('#location-search').on('click' validateFields);
 $('.columns').on('click','.button.card-footer-item', favoriteHandler);
