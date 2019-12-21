@@ -1,131 +1,78 @@
-# Introduction
-Welcome to Picturesque! The web app that will make planning your trip a lot easier! This web app was created to help provide travelers and the like to find instagrammable places! 
+# Picturesque
 
-## Index
+This app was created to make planning for trips a lot easier! This web app helps travelers and everybody else find instagrammable places anywhere in the world! 
+![Screen Shot 2019-12-20 at 8 58 52 PM](https://user-images.githubusercontent.com/36174975/71301428-d4b08600-236c-11ea-9a0e-b796a1c5c466.png)
+![Screen Shot 2019-12-20 at 8 58 46 PM](https://user-images.githubusercontent.com/36174975/71301430-d67a4980-236c-11ea-99bf-2a02bee59b93.png)
+![Screen Shot 2019-12-20 at 8 57 09 PM](https://user-images.githubusercontent.com/36174975/71301433-daa66700-236c-11ea-871a-24eb7cce1f74.png)
 
-- [About](#about)
-- [Usage](#usage)
-  - [Installation](#installation)
-  - [Commands](#commands)
-- [Development](#development)
-  - [Pre-Requisites](#pre-requisites)
-  - [Developmen Environment](#development-environment)
-  - [File Structure](#file-structure)
-  - [Build](#build)  
-  - [Deployment](#deployment)  
-- [Community](#community)
-  - [Contribution](#contribution)
-  - [Branches](#branches)
-  - [Guideline](guideline)  
-- [FAQ](#faq)
-- [Resources](#resources)
-- [Gallery](#gallery)
-- [Credit/Acknowledgment](#creditacknowledgment)
-- [License](#license)
+## Getting Started
 
-## About
-Welcome to Picturesque! The web app that will make planning your trip a lot easier! This web app was created to help provide travelers and the like to find instagrammable places! This web app was created using jquery, express/node.js, google maps api and google places api. 
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-## Usage
-Write about how to use this project.
+### Prerequisites
 
-### Installation
-- Steps on how to install this project, to use it.
-- Be very detailed here, For example, if you have tools which run on different operating systems, write installation steps for all of them.
+What things you need to install the software and how to install them
+-NODE.JS/NPM 
+-GIT
+
+
+
+### Installing
+
+A step by step series of examples that tell you how to get a development env running
+
+Say what the step will be
 
 ```
-$ add installations steps if you have to.
+git clone https://github.com/zolvera1/Picturesque.git
+```
+```
+cd server 
+```
+Install the dependencies 
+```
+npm install
+```
+```
+npm run live-dev-reload 
+```
+Then, go back and CD into the client repository 
+```
+cd client
+```
+install dependencies as well 
+```
+npm install
+```
+run browser-sync 
+```
+npx browser-sync start -sw
 ```
 
-### Commands
-- Commands to start the project.
+## Built With
 
-## Development
-If you want other people to contribute to this project, this is the section, make sure you always add this.
+* [jQuery](https://jquery.com/) - The web framework used
+* [npm](https://www.npmjs.com/) - Dependency Management
+* [NODE.JS/EXPRESS.JS](https://nodejs.org/en/) - Used for backend 
+* [EXPRESS.JS](https://expressjs.com/) - Backend framework used 
 
-### Pre-Requisites
-List all the pre-requisites the system needs to develop this project.
-- A tool
-- B tool
+## Contributing
 
-### Development Environment
-Write about setting up the working environment for your project.
-- How to download the project...
-- How to install dependencies...
+Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
 
 
-### File Structure
-Add a file structure here with the basic details about files, below is an example.
+## Authors
 
-| No | File Name | Details 
-|----|------------|-------|
-| 1  | index | Entry point
-
-### Build
-Write the build Instruction here.
-
-### Deployment
-Write the deployment instruction here.
-
-## Community
-
-If it's open-source, talk about the community here, ask social media links and other links.
-
-### Contribution
-
- Your contributions are always welcome and appreciated. Following are the things you can do to contribute to this project.
-
- 1. **Report a bug** <br>
- If you think you have encountered a bug, and I should know about it, feel free to report it [here]() and I will take care of it.
-
- 2. **Request a feature** <br>
- You can also request for a feature [here](), and if it will viable, it will be picked for development.  
-
- 3. **Create a pull request** <br>
- It can't get better then this, your pull request will be appreciated by the community. You can get started by picking up any open issues from [here]() and make a pull request.
-
- > If you are new to open-source, make sure to check read more about it [here](https://www.digitalocean.com/community/tutorial_series/an-introduction-to-open-source) and learn more about creating a pull request [here](https://www.digitalocean.com/community/tutorials/how-to-create-a-pull-request-on-github).
+* **Yasmin Aguilar** - *Project Team member* 
+* **Zabdi Sam Gomez Olvera** - *Project member (myself)* 
 
 
-### Branches
 
- I use an agile continuous integration methodology, so the version is frequently updated and development is really fast.
+## License
 
-1. **`stage`** is the development branch.
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-2. **`master`** is the production branch.
+## Acknowledgments
 
-3. No other permanent branches should be created in the main repository, you can create feature branches but they should get merged with the master.
+* Chris burgess for the backend 
 
-**Steps to work with feature branch**
-
-1. To start working on a new feature, create a new branch prefixed with `feat` and followed by feature name. (ie. `feat-FEATURE-NAME`)
-2. Once you are done with your changes, you can raise PR.
-
-**Steps to create a pull request**
-
-1. Make a PR to `stage` branch.
-2. Comply with the best practices and guidelines e.g. where the PR concerns visual elements it should have an image showing the effect.
-3. It must pass all continuous integration checks and get positive reviews.
-
-After this, changes will be merged.
-
-
-### Guideline
-coding guidelines or other things you want people to follow should follow.
-
-
-## FAQ
-You can optionally add a FAQ section about the project.
-
-
-##  Gallery
-Pictures of your project.
-
-## Credit/Acknowledgment
-
-- Yasmin Aguilar for being an awesome project helper 
-- Chris Burgess for backend
-
-##  License
-This app uses the MIT license.
