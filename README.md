@@ -1,7 +1,5 @@
 # Introduction
-- Add your project logo.
-- Write a short introduction to the project.
-- If you are using badges, add them here.
+Welcome to Picturesque! The web app that will make planning your trip a lot easier! This web app was created to help provide travelers and the like to find instagrammable places! 
 
 ## Index
 
@@ -26,7 +24,7 @@
 - [License](#license)
 
 ## About
-Add a detailed introduction about the project here, everything you want the reader to know.
+Welcome to Picturesque! The web app that will make planning your trip a lot easier! This web app was created to help provide travelers and the like to find instagrammable places! This web app was created using jquery, express/node.js, google maps api and google places api. 
 
 ## Usage
 Write about how to use this project.
@@ -120,14 +118,14 @@ coding guidelines or other things you want people to follow should follow.
 ## FAQ
 You can optionally add a FAQ section about the project.
 
-##  Resources
-Add important resources here
 
 ##  Gallery
 Pictures of your project.
 
 ## Credit/Acknowledgment
-Credit the authors here.
+
+- Yasmin Aguilar for being an awesome project helper 
+- Chris Burgess for backend
 
 ##  License
-Add a license here, or a link to it.
+This app uses the MIT license.
